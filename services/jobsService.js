@@ -3,11 +3,11 @@ const mysql = require('mysql2/promise');
 
 // Database configuration
 const DB_CONFIG = {
-  host: process.env.DB_HOST || 'betting-tips-db.c8vy8aac62dh.us-east-1.rds.amazonaws.com',
-  user: process.env.DB_USER || 'admin',
-  password: process.env.DB_PASSWORD || 'ussdappstorage254',
-  database: process.env.DB_NAME || 'ussd_app',
-  port: process.env.DB_PORT || 3306
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT
 };
 
 // Initialize SMS service
